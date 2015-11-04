@@ -7,6 +7,8 @@ The table below shows how the word "Pgr" is encoded.
 
 ![Encoding example](doc/uoencode_00.png)
 
+First, a bunch of three octets 0x50(P) 0x67(g) 0x72(r) is sliced into four pieces of 6-bit section. Next, Uo-characters corresponding each 6-bit patterns are looked up in the table. And then, 4 Uo-characters are converted into byte sequence of the specific encoding.
+
 The following table shows the conversion of the decimal value of the 6-bit fields and their corresponding Uo character.
 
 |6bits|Uo|UTF-16|EUC-JP| |6bits|Uo|UTF-16|EUC-JP|
